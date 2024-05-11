@@ -118,7 +118,7 @@ section .loop h1 {
     font-size:2rem;
     color: #FFDE59;
 }
-.loop div span.typed-cursor {
+.loop div .typed-cursor {
     opacity: 1;
 } 
 div.loop p {
