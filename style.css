@@ -112,14 +112,15 @@ section .loop h1 {
     font-size: 70px;
     letter-spacing: 2px;
 }
-.loop span.auto{
+.loop span{
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size:2rem;
     color: #FFDE59;
 }
-.loop div .typed-cursor {
+.loop .typed-cursor {
     opacity: 1;
+    color: yellow;
 } 
 div.loop p {
     text-align:left;
