@@ -118,9 +118,9 @@ section .loop h1 {
     font-size:2rem;
     color: #FFDE59;
 }
-/* .loop div span.typed-cursor {
+.loop div span.typed-cursor {
     opacity: 1;
-} */
+} 
 div.loop p {
     text-align:left;
     font-family: "Open Sans", sans-serif;
