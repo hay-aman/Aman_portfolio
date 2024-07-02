@@ -503,6 +503,7 @@ section .proj-cards-4:hover {
 
 #skills h2 {
     font-family: "Josefin Slab", serif;
+    letter-spacing: 1px;
     /* background-color: #fff; */
     left: 32%;
     font-size: 36px;
