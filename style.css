@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(68, 67, 67);
+    width: 100%;
+    height: auto;
+}
+
+/* Style the logo */
+.logo {
+    display: inline-block;
+}
+
+.logo a {
+    display: inline-block;
+    color: white;
+    position: relative;
+    left: 1vw;
+    /* Make logo float to the left */
+    text-decoration: none;
+    font-family: "Caveat", cursive;
+    letter-spacing: 0.0625rem;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0rem 1rem;
+}
+
+/* Underline from center */
+.logo a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: yellow;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.logo a:hover:before,
+.logo a:focus:before,
+.logo a:active:before {
+    left: 0;
+    right: 0;
+}
+
+.logo span {
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+/* Style the navigation element */
+.logo-nav nav {
+    display: inline-block;
+    position: relative;
+    left: 50vw;
+    /* Make navigation float to the right */
+    top: 0px;
+}
+
+/* Style the unordered list */
+.logo-nav nav ul {
+    list-style: none;
+    /* Remove default bullet points */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* Style the list items */
+.logo-nav nav ul li {
+    display: inline-block;
+    margin-right: 2rem;
+    /* Maintain some margin on the right */
+    padding: 0rem 1.5rem;
+    /* Add padding for top and right space within `<li>`  */
+}
+
+/* Style the anchor tags (navigation links) */
+.logo-nav nav ul li a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: white;
+    /* Set link color */
+    font-weight: bold;
+    /* Make link text bold */
+    font-family: "Josefin Slab", serif;
+    font-weight: 500;
+    font-size: 1.375rem;
+}
+
+.logo-nav nav ul li.active a {
+    color: yellow;
+}
+
+/* Style for link hover effect */
+.logo-nav nav ul li a:hover {
+    color: yellow;
+}
+
+section.about {
+    width: 100%;
+    height: auto;
+}
+
+.about div.loop {
+    display: inline-block;
+    width: 45%;
+    padding: 2.5rem 2.1875rem;
+    padding-left: 9.375rem;
+}
+
+section .loop h1 {
+    color: white;
+    font-family: "Fasthand", cursive;
+    font-size: 4.375rem;
+    letter-spacing: 0.125rem;
+}
+
+.loop span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #FFDE59;
+}
+
+.loop .typed-cursor {
+    opacity: 1;
+    color: yellow;
+}
+
+div.loop p {
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 1.0625rem;
+    letter-spacing: 0.0625rem;
+    padding: 0.625rem 0;
+}
+
+div.loop button {
+    background-color: #FFDE59;
+    outline: none;
+    border: none;
+    padding: 0.5625rem 2.1875rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+div.loop button:hover {
+    box-shadow: 2px 2px 1.875rem white;
+    transition: all ease-out 0.2s;
+}
+
+div.image {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    top: -5vh;
+    padding-left: 13vw;
+}
+
+div.image img {
+    width: 15.625em;
+    border-radius: 50%;
+    object-position: center right;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(247, 255, 3, 0.897);
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+}
+
+div.image img:hover {
+    box-shadow: 0 0 4rem rgba(255, 247, 6, 0.832);
+}
+
+section.project {
+    width: 100%;
+    height: 130vh;
+}
+
+section.project .proj-details {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 9.5%;
+}
+
+.proj-details h1 {
+    font-family: "Josefin Slab", serif;
+    color: yellow;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.proj-details p {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    padding-top: 4vh;
+}
+
+/* For card-1 */
+section .proj-cards-1 {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(107, 105, 105);
+    width: 20%;
+    height: auto;
+    border-radius: 10%;
+    /* margin-left: 10vw; */
+    left: 68vw;
+}
+
+section .proj-cards-1:hover {
+    box-shadow: 2px 2px 1.875rem white;
+    transition: all ease-out 0.2s;
+}
+
+.proj-cards-1 img {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 15vh;
+    border-radius: 40%;
+    left: 4.9vw;
+    top: 2vh;
+}
+
+.proj-cards-1 h3 {
+    font-family: sans-serif;
+    margin: 30px 58px 0px 56px;
+    font-size: 1.2em;
+    color: #FFDE59;
+}
+
+.proj-cards-1 p {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+}
+
+.proj-cards-1 button {
+    margin: 50px 52px;
+    background-color: #FFDE59;
+    outline: none;
+    border: none;
+    padding: 0.5625rem 2.1875rem;
+    margin-top: 3.25rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.proj-cards-1 button:hover {
+    box-shadow: 2px 2px 1.875rem rgb(220, 192, 79);
+    transition: all ease-out 0.2s;
+}
+
+/* End of Card-1 */
+
+/* For Card-2 */
+section .proj-cards-2 {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(107, 105, 105);
+    width: 20%;
+    height: auto;
+    border-radius: 10%;
+    top: 140vh;
+    left: 9.5%;
+}
+
+section .proj-cards-2:hover {
+    box-shadow: 2px 2px 1.875rem white;
+    transition: all ease-out 0.2s;
+}
+
+.proj-cards-2 img {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 15vh;
+    border-radius: 40%;
+    left: 4.9vw;
+    top: 2vh;
+}
+
+.proj-cards-2 h3 {
+    font-family: sans-serif;
+    margin: 30px 58px 0px 56px;
+    font-size: 1.2em;
+    color: #FFDE59;
+}
+
+.proj-cards-2 p {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+}
+
+.proj-cards-2 button {
+    margin: 50px 52px;
+    background-color: #FFDE59;
+    outline: none;
+    border: none;
+    padding: 0.5625rem 2.1875rem;
+    margin-top: 3.25rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.proj-cards-2 button:hover {
+    box-shadow: 2px 2px 1.875rem rgb(220, 192, 79);
+    transition: all ease-out 0.2s;
+}
+
+/* End of Card-2 */
+
+/* For Crad-3 */
+section .proj-cards-3 {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(107, 105, 105);
+    width: 20%;
+    height: auto;
+    border-radius: 10%;
+    top: 140vh;
+    left: 68.0%;
+}
+
+section .proj-cards-3:hover {
+    box-shadow: 2px 2px 1.875rem white;
+    transition: all ease-out 0.2s;
+}
+
+.proj-cards-3 img {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 15vh;
+    border-radius: 40%;
+    left: 4.9vw;
+    top: 2vh;
+}
+
+.proj-cards-3 h3 {
+    font-family: sans-serif;
+    margin: 30px 58px 0px 75px;
+    font-size: 1.2em;
+    color: #FFDE59;
+}
+
+.proj-cards-3 p {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+}
+
+.proj-cards-3 button {
+    margin: 50px 52px;
+    background-color: #FFDE59;
+    outline: none;
+    border: none;
+    padding: 0.5625rem 2.1875rem;
+    margin-top: 3.25rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.proj-cards-3 button:hover {
+    box-shadow: 2px 2px 1.875rem rgb(220, 192, 79);
+    transition: all ease-out 0.2s;
+}
+
+/* End of Card-3 */
+
+/* For Card-4 */
+section .proj-cards-4 {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(107, 105, 105);
+    width: 20%;
+    height: auto;
+    border-radius: 10%;
+    top: 140vh;
+    left: 39%;
+}
+
+section .proj-cards-4:hover {
+    box-shadow: 2px 2px 1.875rem white;
+    transition: all ease-out 0.2s;
+}
+
+.proj-cards-4 img {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 15vh;
+    border-radius: 40%;
+    left: 4.9vw;
+    top: 2vh;
+}
+
+.proj-cards-4 h3 {
+    font-family: sans-serif;
+    margin: 30px 58px 0px 90px;
+    font-size: 1.2em;
+    color: #FFDE59;
+}
+
+.proj-cards-4 p {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+}
+
+.proj-cards-4 button {
+    margin: 50px 52px;
+    background-color: #FFDE59;
+    outline: none;
+    border: none;
+    padding: 0.5625rem 2.1875rem;
+    margin-top: 3.25rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.proj-cards-4 button:hover {
+    box-shadow: 2px 2px 1.875rem rgb(220, 192, 79);
+    transition: all ease-out 0.2s;
+}
+
+/* End Card-4 */
+
+/* Skills Section */
+#skills {
+    background-color: rgb(68, 67, 67);
+}
+
+.skills-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+#skills h2 {
+    /* background-color: #fff; */
+    font-family: "Josefin Slab", serif;
+    letter-spacing: 1px;
+    left: 32%;
+    font-size: 36px;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: block;
+    width: 100%;
+}
+
+.skill-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(107, 105, 105);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.skill-item:hover {
+    box-shadow: 0 4px 8px rgba(215, 236, 56, 0.94);
+
+}
+
+.skill-item h3 {
+    font-size: 24px;
+    color: #FFDE59;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .skill-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #skills h2 {
+        font-size: 28px;
+    }
+
+    .skill-item h3 {
+        font-size: 20px;
+    }
+
+    .skill-item p {
+        font-size: 16px;
+    }
+}
+
+/* Style for contact section */
+
+form.contact {
+    width: 100%;
+    height: 65vh;
+    /* background-color: #8d5a5a; */
+}
+
+.contact h1 {
+    /* background-color: green; */
+    font-family: sans-serif;
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 60%;
+    left: 19%;
+    top: 25px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+h1 span {
+    color: yellow;
+}
+
+form .inputBox {
+    position: relative;
+    /* background-color: red;  */
+    top: 100px;
+    width: 60%;
+    height: 10vh;
+    text-align: center;
+    left: 19%;
+    /* border: green 2px solid; */
+}
+
+.inputBox input {
+    background: transparent;
+    position: relative;
+    top: 35px;
+    width: 35%;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: yellow;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.inputBox span {
+    position: absolute;
+    color: rgb(228, 253, 1);
+    left: 47%;
+    text-transform: uppercase;
+    pointer-events: none;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    bottom: 20px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: white;
+    transform: translateY(-30px);
+    font-size: 20px;
+    left: 46%;
+}
+
+.inputBox i {
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background: yellow;
+    left: 32.5%;
+    bottom: 17px;
+    overflow: auto;
+}
+
+.inputBox i::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0);
+    animation: alternate 2s linear infinite;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~i::before,
+.inputBox input:focus~i::before {
+    left: 0;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 250px;
+    }
+}
+
+form div.message {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    height: 4vw;
+    top: 25%;
+    margin-left: 36.5%;
+    /* border: 2px red solid; */
+}
+
+.message textarea {
+    background: transparent;
+    font-size: 1.25em;
+    width: 95%;
+    height: 80%;
+    margin: 2% 2% 2% 2%;
+    letter-spacing: 1px;
+    color: rgb(228, 253, 1);
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.message span {
+    position: absolute;
+    color: rgb(228, 253, 1);
+    left: 39%;
+    text-transform: uppercase;
+    pointer-events: none;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    bottom: 7px;
+}
+
+.message textarea:valid~span,
+.message textarea:focus~span {
+    color: white;
+    transform: translateY(-50px);
+    font-size: 20px;
+    left: 37%;
+}
+
+div.message i {
+    position: absolute;
+    width: 95.5%;
+    height: 2px;
+    background: yellow;
+    left: 2%;
+    bottom: 5px;
+    overflow: auto;
+}
+
+div.message i::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0);
+    animation: alternate 2s linear infinite;
+    transition: 0.5s;
+}
+
+div.message textarea:valid~i::before,
+div.message textarea:focus~i::before {
+    left: 0;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 250px;
+    }
+}
+
+form div.button {
+    position: relative;
+    width: 10%;
+    height: 10%;
+    top: 30%;
+    left: 44%;
+    text-align: center;
+}
+
+.button button {
+    font-family: "Open Sans", sans-serif;
+    background-color: #FFDE59;
+    height: 60%;
+    width: 50%;
+    margin-top: 6%;
+    font-size: 20px;
+    border-radius: 45px;
+    outline: none;
+    border: none;
+}
+
+.button button:hover {
+    box-shadow: 2px 2px 1.875rem rgb(255, 255, 255);
+    transition: all ease-out 0.2s;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(#ffde59b5, #e8bb08de, #ffee00);
+    justify-content: space-between;
+}
+
+footer p {
+    position: relative;
+    padding: 10px 521px 10px 500px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer p a.link {
+    font-family: "Caveat", cursive;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+footer p a.link:hover {
+    color: white;
+}
+
+footer .social {
+    position: relative;
+    text-decoration: none;
+    padding: 0% 1% 0% 2%;
+    left: 38.8%;
+    font-size: 23px;
+    opacity: 0.8;
+}
+
+footer .social:hover {
+    opacity: 1;
+    color: white;
+}
